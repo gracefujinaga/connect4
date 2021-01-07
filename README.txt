@@ -1,8 +1,3 @@
-=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=
-CIS 120 Game Project README
-PennKey: Gracefuj
-=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=
-
 ===================
 =: Core Concepts :=
 ===================
@@ -74,39 +69,4 @@ PennKey: Gracefuj
   
   Game: game is the controller. It adds mouseclicks and listeners and tells the gameboard how to 
   interact with the model. 
-  
-  
-
-- Were there any significant stumbling blocks while you were implementing your
-  game (related to your design, or otherwise)?
-  
-  The biggest stumbling blocks were dealing with my filereader and writer. Writing integers
-  ended up being a big issue because of the way that bufferedWriter overrides when writing
-  an integer instead of a string. The hardest part about this was that the javadocs were
-  just so unhelpful because they didn't say that so it took some time to figure out what
-  was truly going wrong. It was also harder to test these functions because they arent
-  part of the main game state. 
-  
-  I also think I was a bit indecisive about what part of the game state I wanted to store.
-  I switched back and forth between keeping high scores versus the actual gameboard. If I had
-  made a decision and stuck with it, I think I would have been able to finish this 
-  more efficiently.
-
-
-- Evaluate your design. Is there a good separation of functionality? How well is
-  private state encapsulated? What would you refactor, if given the chance?
-  
-  I honestly think my design is pretty solid. It is encapsulated well and follows the MVC model
-  that we discussed in class. If I refactored, I would probably try to cut down the number of times
-  I create a new fileReader. I had issues when trying to read from the same file without 
-  creating a new one. I also would refactor my checking for a win in the connect4 class. I think
-  this could be done more efficiently had I more time.
-s
-
-========================
-=: External Resources :=
-========================
-
-- Cite any external resources (libraries, images, tutorials, etc.) that you may
-  have used while implementing your game.
   
